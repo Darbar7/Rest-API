@@ -1,0 +1,45 @@
+---
+# This is a sample YAML configuration file
+# demonstrating various data types and structures.
+
+# Scalar values
+application_name: "MyWebApp"
+version: 1.0.0
+debug_mode: true
+port: 8080
+pi_value: 3.14159
+
+# Lists (sequences)
+features:
+  - user_authentication
+  - data_encryption
+  - logging
+  - error_handling
+
+# Mappings (dictionaries/objects)
+database_config:
+  type: "PostgreSQL"
+  host: "localhost"
+  username: "admin"
+  password: "secure_password"
+  port: 5432
+
+# Nested structures
+server_settings:
+  http:
+    enabled: true
+    max_connections: 100
+  https:
+    enabled: false
+    certificate_path: "/etc/ssl/certs/server.crt"
+    key_path: "/etc/ssl/private/server.key"
+
+# Multi-line string (folded style - line breaks are folded into spaces)
+welcome_message: >
+  Welcome to our application!
+  We hope you enjoy using it.
+
+# Multi-line string (literal style - preserves line breaks)
+license_agreement: |
+  This software is provided "as-is" without warranty of any kind.
+  By using this software, you agree to the terms of this license.
